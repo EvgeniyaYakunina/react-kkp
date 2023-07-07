@@ -10,6 +10,7 @@ import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOf
 
 
 
+
 function App() {
     console.log("App rendering")
 
@@ -19,7 +20,8 @@ function App() {
 
     return (
         <div className={"App"}>
-            <UncontrolledRating />
+
+            {/*<UncontrolledRating />*/}
             <Accordion titleValue={"Menu"} onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}} collapsed={accordionCollapsed}/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
